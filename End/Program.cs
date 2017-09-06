@@ -116,9 +116,41 @@ namespace End
 
             #endregion
 
+            #region string manipulation 
 
+            //concatenating strings
 
+            string one = "abc";
+            string two = "defg";
+            string combined = one + two; //will write out "abcdefg"
 
+            Console.WriteLine(combined);
+
+            //built in string formatting 
+            string question = "What are you doing?";
+            string angryQuestion = question.ToUpper(); //WHAT ARE YOU DOING?
+
+            string quietQuestion = question.ToLower(); //what are you doing?
+
+            string anotherQuietQuestion = "THIS WILL BE QUIET AS WELL".ToLower();
+
+            //concatonate some strings, make them loud or quiet. 
+
+            //trimming strings
+
+            //sometimes if you have user input you might want to trim the white space from their response
+
+            string userInput = " James ";
+            string noBlankSpaceStart = userInput.TrimStart(); // "James " 
+            string noBlankSpaceEnd = userInput.TrimEnd(); // " James" 
+            string totallyClean = userInput.Trim(); // "James"
+
+            string shortenedName = userInput.Trim().Substring(0, 3);
+            Console.WriteLine(shortenedName);
+
+            //make some messy strings and trim them 
+
+#endregion 
 
 
         }
