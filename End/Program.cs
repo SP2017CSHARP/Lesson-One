@@ -150,8 +150,128 @@ namespace End
 
             //make some messy strings and trim them 
 
-#endregion 
+            #endregion
 
+            #region conditionalStatements
+            Console.WriteLine("Enter Your Name");
+            string myName = Console.ReadLine().ToLower();
+
+            // == equal to
+            // != not equal to
+            // > greater then
+            // < less then
+            // >= greater then or equal
+            // || or 
+
+            if (myName == "james") // equals false or true
+            {
+                Console.WriteLine("Hello David");
+            }
+            else
+            {
+                Console.WriteLine("No Its not");
+            }
+
+            if (5 > 4 && 6 < 7)
+            {
+                Console.WriteLine("This is how you can check for conditions at the same time");
+            }
+
+            if (5 == 7 || 9 < 10)
+            {
+                //this code will run because it checks if EITHER of these statements are true 
+                Console.WriteLine("This is an 'or' conditional statement. Either can be true for the code to run");
+            }
+
+            if (4 == 5)
+            {
+                Console.WriteLine("This code will never run");
+            }
+            else
+            {
+                Console.WriteLine("This code will never run");
+            }
+
+           
+
+            Console.WriteLine("Press any key to end");
+            Console.ReadKey();
+
+            #endregion
+
+            #region assignments
+
+            ////assignment one
+            //Console.WriteLine("What is your name?");
+            //string name = Console.ReadLine();
+            //Console.WriteLine($"Hello {name}");
+
+            ////assignment two
+            //Console.WriteLine("What is your name?");
+            //string name = Console.ReadLine();
+            //Console.WriteLine($"Hello {name}");
+
+            //if (name.ToLower() == "john") //
+            //{
+            //    Console.WriteLine("Wow, I can't believe your name is john!");
+            //}
+
+            //if (name.Length > 6)
+            //{
+            //    Console.WriteLine("Wow, thats a really long name");
+            //}
+
+            ////assignment 3
+            //Console.Write("Please write first number: ");
+            //int num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Please write second number: ");
+            //int num2 = Convert.ToInt32(Console.ReadLine());
+
+            //if (num1 > 100 && num2 > 100)
+            //{
+            //    Console.WriteLine("BOth numbers are bigger than 100");
+            //}
+
+            ////assignment 4
+            //Console.Write("Please write first number: ");
+            //int n1 = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Please write second number: ");
+            //int n2 = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Please write second number: ");
+            //int n3 = Convert.ToInt32(Console.ReadLine());
+
+            //if (n1 == n2 && n2 == n3)
+            //{
+            //    Console.WriteLine("All three numbers are equal");
+            //}
+
+            ////Assignment 4
+            //Console.WriteLine("Please write you first name:");
+            //string fname = Console.ReadLine();
+            //Console.WriteLine("Please write your last name:");
+            //string lname = Console.ReadLine();
+            //Console.WriteLine("Please write your age");
+            //int age = Convert.ToInt32(Console.ReadLine());
+            //// fullname.Contains(" ");
+            //if (fname != "" && lname != "" && age > 18)
+            //{
+            //    Console.WriteLine("Awesome");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You either don't have a name or are too young to be here.... Leave now");
+            //}
+
+
+            ////assignment 5
+            //Console.WriteLine("Write a sentence:");
+            //string text = Console.ReadLine();
+            //if (text.Contains("ä") || text.Contains("ö") || text.Contains("å"))
+            //{
+            //    Console.WriteLine("You must be swedish! Tjena....");
+            //}
+
+            #endregion
 
         }
     }
